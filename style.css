@@ -67,15 +67,13 @@ button:hover {
     line-height: 2rem;
     margin-bottom: 1rem;
 }
-/* .title::after {
-    content: '. ';
-} */
 
 .array {
     font-weight: lighter;
 }
 .array::before {
-    content: ' ';
+    color: #FFF;
+    content: 'n';
 }
 
 
@@ -102,5 +100,9 @@ button:hover {
         flex-direction: initial;
         line-height: 0;
         margin-top: 1rem;
+    }
+    .title::after {
+        content: '. ';
+        font-weight: lighter;
     }
 }

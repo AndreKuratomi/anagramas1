@@ -30,13 +30,13 @@ button.addEventListener('click', function () {
         for (let count = 0; count < palavras.length; count++) {
             let anagramingCount = alphabetize(palavras[count]);
             if (anagramingCount === anagramingTyped) { //typedText !== palavras[count] && 
-                results.push(palavras[count]);
+                results.push(' ' + palavras[count]);
             }
         }
         if (results.length === 0) {
             return '(Não há anagramas disponíveis!)';
         }
-        return results//.join(', ');
+        return results;
     };
     showAnagrams(getAnagramsOf(typedText));
 });

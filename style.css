@@ -1,4 +1,4 @@
-html, body, h1, div, input, button {
+html, body, h1, div, input, button, strong, span, p {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -60,10 +60,14 @@ button:hover {
     transition: .5s ease;
 }
 
+.resultado {
+    display: flex;
+    flex-direction: column;
+}
+
 .title {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
     line-height: 2rem;
     margin-bottom: 1rem;
 }
@@ -71,13 +75,15 @@ button:hover {
 .array {
     font-weight: lighter;
 }
-.array::before {
-    color: #FFF;
-    content: 'n';
+
+#espaço {
+    display: none;
 }
 
 
-@media (min-width: 798px) {
+
+
+@media (min-width: 768px) {
     div {
         flex-direction: row;
     }
@@ -101,8 +107,10 @@ button:hover {
         line-height: 0;
         margin-top: 1rem;
     }
-    .title::after {
-        content: '. ';
-        font-weight: lighter;
+    .resultado {
+        flex-direction: row;
+    }
+    #espaço {
+        display: block;
     }
 }

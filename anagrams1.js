@@ -7,10 +7,10 @@ button.addEventListener('click', function () {
     const showAnagrams = result => {
         const show = window.document.getElementById('showUs');
         const div = window.document.createElement('div');
-        div.textContent = `Anagramas para "${typedText}": `;
+        div.innerHTML = `<p class="resultado"><strong>Anagramas para "${typedText}":</strong><span id="espaço">&nbsp</span><span>${result}.</span></p>`;
         div.classList = 'title';
         const span = window.document.createElement('span');
-        span.innerHTML = `${result}`;
+        span.innerText = ` `;
         span.classList = 'array';
         div.appendChild(span);
         show.appendChild(div);
@@ -23,7 +23,7 @@ button.addEventListener('click', function () {
     //mas que vontade de transformar este array palavras num objeto....
     const getAnagramsOf = typedText => {
         if (typedText.includes(' ')) {
-            return '(Não podem frases... Apenas UMA palavra conforme o placeholder.)'
+            return '(Não podem frases... Apenas UMA palavra conforme o placeholder. Para frases aguarde Anagramas 2, ok?)';
         }
         let results = [];
         let anagramingTyped = alphabetize(typedText);

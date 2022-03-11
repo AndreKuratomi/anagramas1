@@ -60,9 +60,7 @@ code .
 
 <p>Basta clicar no link abaixo:</p>
 
-```
-(link)
-```
+https://anagrams1.vercel.app/
 
 
 

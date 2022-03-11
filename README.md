@@ -9,7 +9,7 @@
 
 # Descrição
 
-<p><b>Anagramas 1</b> é um serviço simples de geração e busca de anagramas. Esta aplicação utiliza HTML5, CSS3, DOM e a linguagem javascript</p>
+<p><b>Anagramas 1</b> é um serviço simples de geração e busca de anagramas na língua portuguesa. O usuário digita no input uma palavra e após clicar a aplicação buscará por anagramas da palavra digitada. Esta aplicação utiliza HTML5, CSS3, DOM e a linguagem Javascript</p>
 <br>
 
 # Instalação
